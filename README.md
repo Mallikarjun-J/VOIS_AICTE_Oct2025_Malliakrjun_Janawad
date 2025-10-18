@@ -28,6 +28,40 @@ This project demonstrates **advanced data science skills** through comprehensive
 
 ---
 
+## 🖼️ Visual Showcase
+
+<div align="center">
+
+### 📊 Comprehensive Analytics Dashboard
+
+![Summary Dashboard](reports/figures/10_summary_dashboard.png)
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="reports/figures/07_correlation_heatmap.png" width="100%"/>
+<br><b>Correlation Heatmap</b>
+<br>Feature relationships
+</td>
+<td align="center" width="33%">
+<img src="reports/models/feature_importance.png" width="100%"/>
+<br><b>ML Feature Importance</b>
+<br>Top price predictors
+</td>
+<td align="center" width="33%">
+<img src="reports/figures/08_geographic_distribution.png" width="100%"/>
+<br><b>Geographic Map</b>
+<br>NYC listings distribution
+</td>
+</tr>
+</table>
+
+*All visualizations are generated at 300 DPI for publication-quality output*
+
+</div>
+
+---
+
 ## ✨ Features
 
 <table>
@@ -206,66 +240,99 @@ The dashboard features **5 comprehensive tabs** with **40+ interactive visualiza
 
 The project generates **10 professional publication-ready charts**:
 
+#### 📊 Summary Dashboard
+![Summary Dashboard](reports/figures/10_summary_dashboard.png)
+*Comprehensive 6-panel overview with key metrics and distributions*
+
+---
+
 <table>
 <tr>
 <td width="50%">
 
-#### 📈 Price & Distribution
-1. **price_distribution.png**
-   - Histogram of listing prices
-   - Shows pricing patterns and outliers
-   - Mean: $152.72, Median: $106
-
-2. **room_type_analysis.png**
-   - Room type breakdown
-   - Entire home (52%), Private (45%), Shared (3%)
+#### 📈 Price Distribution
+![Price Distribution](reports/figures/01_price_distribution.png)
+- Histogram of listing prices
+- Mean: $152.72, Median: $106
+- Shows pricing patterns and outliers
 
 </td>
 <td width="50%">
 
-#### 🗺️ Location Analysis
-3. **neighbourhood_analysis.png**
-   - Top 20 neighborhoods by count
-   - Williamsburg leads with 3,920 listings
-
-4. **geographic_distribution.png**
-   - Scatter plot with coordinates
-   - Price-based color coding
+#### 🏠 Room Type Analysis
+![Room Type Analysis](reports/figures/03_room_type_analysis.png)
+- Room type breakdown
+- Entire home (52%), Private (45%), Shared (3%)
+- Visual distribution across categories
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### ⭐ Reviews & Engagement
-5. **reviews_analysis.png**
-   - Review count distributions
-   - Avg: 23.3 reviews per listing
-
-6. **price_vs_reviews.png**
-   - Relationship analysis
-   - Correlation insights
+#### 🗺️ Neighbourhood Analysis
+![Neighbourhood Analysis](reports/figures/02_neighbourhood_analysis.png)
+- Top 20 neighborhoods by listing count
+- Williamsburg leads with 3,920 listings
+- Horizontal bar chart for easy comparison
 
 </td>
 <td width="50%">
 
-#### 📅 Availability & Patterns
-7. **availability_analysis.png**
-   - Days available per year
-   - Avg: 112 days availability
-
-8. **host_analysis.png**
-   - Host listing counts
-   - Multi-listing host patterns
+#### 📍 Geographic Distribution
+![Geographic Distribution](reports/figures/08_geographic_distribution.png)
+- Scatter plot with GPS coordinates
+- Price-based color coding
+- NYC boroughs visualization
 
 </td>
 </tr>
 <tr>
-<td colspan="2">
+<td width="50%">
 
-#### 🔥 Advanced Analytics
-9. **correlation_heatmap.png** - Feature correlation matrix with 16x16 heatmap
-10. **summary_dashboard.png** - 6-panel combined overview with key metrics
+#### ⭐ Reviews Analysis
+![Reviews Analysis](reports/figures/04_reviews_analysis.png)
+- Review count distributions
+- Avg: 23.3 reviews per listing
+- Engagement patterns
+
+</td>
+<td width="50%">
+
+#### 💰 Price vs Reviews
+![Price vs Reviews](reports/figures/09_price_vs_reviews.png)
+- Relationship analysis
+- Correlation insights
+- Scatter plot visualization
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 📅 Availability Analysis
+![Availability Analysis](reports/figures/05_availability_analysis.png)
+- Days available per year
+- Avg: 112 days availability
+- Distribution patterns
+
+</td>
+<td width="50%">
+
+#### 👥 Host Analysis
+![Host Analysis](reports/figures/06_host_analysis.png)
+- Host listing counts
+- Multi-listing host patterns
+- Host distribution metrics
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+#### 🔥 Correlation Heatmap
+![Correlation Heatmap](reports/figures/07_correlation_heatmap.png)
+*Feature correlation matrix showing relationships between all 16 variables*
 
 </td>
 </tr>
@@ -275,16 +342,16 @@ The project generates **10 professional publication-ready charts**:
 ```
 reports/
 └── figures/
-    ├── price_distribution.png
-    ├── neighbourhood_analysis.png
-    ├── room_type_analysis.png
-    ├── reviews_analysis.png
-    ├── availability_analysis.png
-    ├── host_analysis.png
-    ├── correlation_heatmap.png
-    ├── geographic_distribution.png
-    ├── price_vs_reviews.png
-    └── summary_dashboard.png
+    ├── 01_price_distribution.png
+    ├── 02_neighbourhood_analysis.png
+    ├── 03_room_type_analysis.png
+    ├── 04_reviews_analysis.png
+    ├── 05_availability_analysis.png
+    ├── 06_host_analysis.png
+    ├── 07_correlation_heatmap.png
+    ├── 08_geographic_distribution.png
+    ├── 09_price_vs_reviews.png
+    └── 10_summary_dashboard.png
 ```
 
 ---
@@ -320,13 +387,46 @@ Top factors influencing rental prices:
 
 ### 📊 Model Outputs
 
+#### 🏆 Model Performance Comparison
+![Model Comparison](reports/models/model_comparison.png)
+*Comparison of Random Forest, Gradient Boosting, and XGBoost algorithms*
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🎯 Feature Importance
+![Feature Importance](reports/models/feature_importance.png)
+*Top features driving price predictions - Location dominates*
+
+</td>
+<td width="50%">
+
+#### 📊 Prediction Accuracy
+![Predictions Analysis](reports/models/predictions_analysis.png)
+*Actual vs Predicted prices - Strong correlation visible*
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+#### 📉 Error Distribution
+![Error Distribution](reports/models/error_distribution.png)
+*Residual plot showing prediction errors are normally distributed*
+
+</td>
+</tr>
+</table>
+
+**Output Files:**
 ```
 reports/
 └── models/
     ├── model_results.csv          # Performance comparison
     ├── feature_importance.png     # Feature ranking chart
-    ├── actual_vs_predicted.png    # Prediction accuracy plot
-    ├── residuals.png              # Error distribution
+    ├── predictions_analysis.png   # Prediction accuracy plot
+    ├── error_distribution.png     # Error distribution
     └── model_comparison.png       # Algorithm comparison
 ```
 
