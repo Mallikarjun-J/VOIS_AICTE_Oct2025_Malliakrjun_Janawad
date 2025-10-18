@@ -1,0 +1,59 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data files (can be regenerated)
+data/raw/*.csv
+data/processed/*.csv
+
+# Model files
+models/saved_models/*.pkl
+models/saved_models/*.joblib
+models/saved_models/*.h5
+
+# Reports and figures
+reports/*.pdf
+reports/figures/*.png
+reports/figures/*.jpg
+reports/figures/*.svg
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+
+# Streamlit
+.streamlit/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
