@@ -22,9 +22,9 @@ models/saved_models/*.h5
 
 # Reports and figures
 reports/*.pdf
-reports/figures/*.png
-reports/figures/*.jpg
-reports/figures/*.svg
+# reports/figures/*.png  # Commented out - we want to include visualizations
+# reports/figures/*.jpg
+# reports/figures/*.svg
 
 # IDE settings
 .vscode/
